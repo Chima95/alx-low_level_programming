@@ -1,7 +1,3 @@
-Task 0 "0-main.c"
-
-Ans:
-
 #include "main.h"
 
 /**
