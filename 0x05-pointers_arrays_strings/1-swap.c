@@ -1,15 +1,16 @@
 /**
- * reset_to_98 - takes a pointer to an int parameter
- *               and updates the value it points to 98
+ * swap_int - swaps the values of two integers
+ *using two input parameters
  *
- * @n: int parameter
+ * @a: input parameter 1
+ * @b: input parameter 2
  *
  * Return: Nothing
  */
 
 void swap_int(int *a, int *b)
 {
-  int temp;
+   int temp;
 
 temp = *a;
 *a = *b;
