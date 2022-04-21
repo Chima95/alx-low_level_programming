@@ -1,19 +1,12 @@
 /**
- *_puts - print a string
- *@str: A pointer to an int that will be changed
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- *Return: void which means our answer is correct
+ * Return: On success 1.
+ * On error, -1 is returned, and error is there returned
  */
 
-void _puts(char *str)
+int _putchar(char c)
 {
-
-        int i;
-	
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
- putchar('\n');
-return;
+return (write(1, &c, 1));
 }
