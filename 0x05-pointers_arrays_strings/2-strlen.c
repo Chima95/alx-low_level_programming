@@ -1,11 +1,8 @@
 /**
- * swap_int - swaps the values of two integers
- *            using two input parameters
+ *_strlen -length of a string
+ *@s: A pointer to an int that will be changed/updated
  *
- * @a: input parameter 1
- * @b: input parameter 2
- *
- * Return: Nothing
+ * Return: void that means our answer is correct
  */
 
 int _strlen(char *s)
