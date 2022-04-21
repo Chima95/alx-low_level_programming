@@ -16,5 +16,6 @@ u = 0;
 while(s[u] != '\0')
 {
 u++;
-}return (u);
+}
+return (u);
 }
