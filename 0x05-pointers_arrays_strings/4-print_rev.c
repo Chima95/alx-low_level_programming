@@ -19,4 +19,7 @@ void print_rev(char *s)
         {
                 _putchar(s[i]);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4169a10e31c8f4dbcee3232fee66bb64d3cc9776
