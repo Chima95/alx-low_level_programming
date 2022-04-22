@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * print_rev - prints a string in reserve order
  * @s: A pointer to an int that will be changed
