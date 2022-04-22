@@ -1,4 +1,3 @@
-#include "holberton.h"
 /**
  * _puts - print a string
  * @str: A pointer to an int that will be changed
@@ -10,8 +9,8 @@ void _puts(char *str)
 	
 	for (i = 0; str[i] != '\0'; i++)
 	{
-_putchar(str[i]);
+		_putchar(str[i]);
 	}
-_putchar('\n');
+ 	putchar('\n');
 return;
 }
