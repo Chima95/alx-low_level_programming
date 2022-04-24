@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -7,7 +8,7 @@
  * Return: a and n inputs
  */
 
-void print_array(int *a, int n)
+void print_array(int *a, int )
 {
 	int i;
 
