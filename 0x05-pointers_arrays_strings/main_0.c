@@ -1,16 +1,17 @@
+#include <stdio.h>
+
+void print_rev(char *);
+
 /**
- * _puts - print a string
- * @str: A pointer to an int that will be changed
- * Return: void
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-void _puts(char *str)
+int main(void)
 {
-        int i;
-	
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
- 	putchar('\n');
-return;
+	char *str;
+
+	str = "Holberton!";
+	print_rev(str);
+	return (0);
 }
