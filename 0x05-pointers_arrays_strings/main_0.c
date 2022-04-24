@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void print_rev(char *);
+void print_array(int *, int);
 
 /**
  * main - check the code for Holberton School students.
@@ -9,9 +9,10 @@ void print_rev(char *);
  */
 int main(void)
 {
-	char *str;
+	int array[5] = {
+		-198, 298, 402, -1024, 98
+	};
 
-	str = "Holberton!";
-	print_rev(str);
+	print_array(array, 5);
 	return (0);
 }
