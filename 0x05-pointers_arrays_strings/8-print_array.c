@@ -1,5 +1,3 @@
-#include "holberton.h"
-
 /**
  * print_array - a function that prints n elements of an array
  * @a: array name
@@ -7,7 +5,7 @@
  * Return: a and n inputs
  */
 
-void print_array(int *a, int n)
+void print_array(int *a, int *n)
 {
 	int i;
 
