@@ -1,50 +1,32 @@
 #include "main.h"
 
-/
- * is_prime_number - determine if number id prime
- * @n: number
- * Return: 1 if prime, 0 otherwise
+int prime_checker(int n, int i);
+/**
+ * is_prime_number - executes prime_checker
+ * @n: input to check
+ * Return: Always 0 (Success)
  */
-
 int is_prime_number(int n)
 {
-if (n < 2)
-return (0);
-if (n < 4)
-return (1);
-return (prime(n, 2));
-}
-/
- * my_sqrt - returns sqrt of number
- * @x: number
- * @i: number acting as divisor
- * Return: square root of x
- */
-
-int my_sqrt(int x, int i)
-{
-int square;
-
-square = i * i;
-if (square >= x)
-return (i);
-else
-return (my_sqrt(x, i + 1));
+	if (n <= 1)
+		return (0);
+	else if (prime_checker(n, n / 2) > 0)
+		return (1);
+	return (0);
 }
 
 /**
- * prime - helper fuction to find prime
- * @n: number
- * @d: incrementor divisor
- * Return: 0 if not prime, 1 if prime
+ * prime_checker - checks for prime
+ * @n: input to check
+ * @i: n / 2, then passes to i - 1, checks if greater than 0
+ * Return: prime check
  */
-
-int prime(int n, int d)
+int prime_checker(int n, int i)
 {
-if (n % d == 0)
-return (0);
-else if (prime(n, 1) < d)
-return (1);
-else
-return (prime(n, d + 1));
+	if (i == 1)
+		return (1);
+	if (n % i == 0)
+		return (0);
+	else
+		return (prime_checker(n, i - 1));
 }
